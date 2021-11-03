@@ -103,10 +103,12 @@ html {
     margin-top: 100px; }
 
 .product {
-  padding-top: 70px; }
+  padding-top: 70px;
+  margin-top: 70px; }
 
 .product.second-color {
-  background-color: #4762fc; }
+  background-color: #4762fc;
+  height: 780px; }
   .product.second-color .product__name {
     color: #fff; }
   .product.second-color .product__description > p {
@@ -166,7 +168,10 @@ html {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 30px; }
+    margin-top: 30px;
+    transition: all 0.3s linear; }
+  .product__row .product__btn-review:hover {
+    transform: translateY(-3px); }
 
 .container-video {
   background-image: url(../../assets/img/video.png);
@@ -196,6 +201,8 @@ html {
       color: #fff;
       font-size: 14px;
       font-weight: bold; }
+  .container-video__btn:hover {
+    opacity: 0.9; }
 
 .container-customers {
   margin-top: 70px;
@@ -246,3 +253,101 @@ html {
     margin: 10px 0 30px 0; }
   .container-founder__pagination {
     margin: 30px 0 70px 0; }
+
+.footer {
+  background-color: #4762fc;
+  padding: 70px 0; }
+
+.footer-wrap {
+  position: relative; }
+
+.footer__subscribe {
+  margin-bottom: 30px; }
+  .footer__subscribe__label {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px; }
+  .footer__subscribe__mail input {
+    width: 600px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    background-color: #7489fc; }
+  .footer__subscribe__mail button {
+    padding: 8px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #4762fc;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer; }
+  .footer__subscribe__mail button:hover {
+    opacity: 0.9; }
+
+.footer__about__contact {
+  margin-bottom: 20px; }
+  .footer__about__contact h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .footer__about__contact span {
+    color: #eee;
+    font-size: 18px; }
+
+.footer__about__hotline, .footer__about__email, .footer__about__taxcode {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; }
+  .footer__about__hotline h4, .footer__about__email h4, .footer__about__taxcode h4 {
+    color: #fff;
+    font-size: 18px; }
+  .footer__about__hotline span, .footer__about__email span, .footer__about__taxcode span {
+    color: #eee;
+    font-size: 18px;
+    margin-left: 10px; }
+
+.footer__about__address {
+  display: flex;
+  margin-bottom: 20px; }
+  .footer__about__address h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px; }
+  .footer__about__address div {
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    font-size: 18px; }
+    .footer__about__address div span {
+      margin-bottom: 5px; }
+
+.footer__socials {
+  position: absolute;
+  bottom: 80px;
+  right: 0; }
+  .footer__socials h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .footer__socials__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    .footer__socials__list li {
+      cursor: pointer; }
+    .footer__socials__list li:hover {
+      opacity: 0.9; }
+
+.footer__copyright {
+  margin-top: 70px;
+  color: rgba(255, 255, 255, 0.5); }

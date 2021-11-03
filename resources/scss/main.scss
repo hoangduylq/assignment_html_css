@@ -144,10 +144,12 @@ html {
 
 .product {
   padding-top: 70px;
+  margin-top: 70px;
 }
 
 .product.second-color {
   background-color: $primary-color;
+  height: 780px;
 
   .product__name {
     color: $white-color;
@@ -240,6 +242,11 @@ html {
     font-size: 18px;
     font-weight: bold;
     margin-top: 30px;
+    transition: all 0.3s linear;
+  }
+
+  .product__btn-review:hover {
+    transform: translateY(-3px);
   }
 }
 
@@ -276,6 +283,10 @@ html {
       font-size: 14px;
       font-weight: bold;
     }
+  }
+
+  &__btn:hover {
+    opacity: 0.9;
   }
 }
 
@@ -345,4 +356,143 @@ html {
   &__pagination {
     margin: 30px 0 70px 0;
   }
+}
+
+//Footer
+.footer {
+  background-color: $primary-color;
+  padding: 70px 0;
+}
+
+.footer-wrap {
+  position: relative;
+}
+
+.footer__subscribe {
+  margin-bottom: 30px;
+  &__label {
+    font-size: 32px;
+    color: $white-color;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+  }
+  &__mail input {
+    width: 600px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    background-color: #7489fc;
+  }
+
+  &__mail button {
+    padding: 8px 20px;
+    background-color: $white-color;
+    border: none;
+    border-radius: 5px;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__mail button:hover {
+    opacity: 0.9;
+  }
+}
+
+.footer__about {
+  &__contact {
+    margin-bottom: 20px;
+
+    h4 {
+      text-transform: uppercase;
+      color: $white-color;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    span {
+      color: #eee;
+      font-size: 18px;
+    }
+  }
+
+  &__hotline,
+  &__email,
+  &__taxcode {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    h4 {
+      color: $white-color;
+      font-size: 18px;
+    }
+
+    span {
+      color: #eee;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    margin-bottom: 20px;
+
+    h4 {
+      color: $white-color;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      color: #eee;
+      font-size: 18px;
+
+      span {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.footer__socials {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+
+  h4 {
+    font-size: 18px;
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      cursor: pointer;
+    }
+
+    li:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.footer__copyright {
+  margin-top: 70px;
+  color: rgba(255, 255, 255, 0.5);
 }
