@@ -135,6 +135,7 @@ html {
 }
 .header .scolldown-btn {
   position: absolute;
+  z-index: 2;
   bottom: 100px;
   right: 50%;
   transform: translateX(-50%);

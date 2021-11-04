@@ -244,15 +244,13 @@
 }
 
 @media (min-width: 1024px) {
-  // .header {
-  //   background-size: 100%;
-  // }
+  .header,
+  .header__bg-cloud,
+  .container-video {
+    background-size: 100%;
+  }
 
   .scolldown-btn {
     display: block;
   }
-
-  // .container-video {
-  //   background-size: 100%;
-  // }
 }
