@@ -41,6 +41,10 @@
   .prod-shadow img:nth-child(2) {
     top: 379px !important;
   }
+
+  .footer__subscribe__label {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 320px) {
@@ -163,6 +167,8 @@
   }
 
   .container-customers__title {
+    font-size: 22px !important;
+    text-align: center;
     width: 300px;
     top: 10%;
   }

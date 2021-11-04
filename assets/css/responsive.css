@@ -18,7 +18,9 @@
   .product__img img {
     width: 320px !important; }
   .prod-shadow img:nth-child(2) {
-    top: 379px !important; } }
+    top: 379px !important; }
+  .footer__subscribe__label {
+    font-size: 24px; } }
 
 @media (min-width: 320px) {
   .header__content {
@@ -90,6 +92,8 @@
   .container-video__title {
     font-size: 24px !important; }
   .container-customers__title {
+    font-size: 22px !important;
+    text-align: center;
     width: 300px;
     top: 10%; }
   .container-customers__list {
