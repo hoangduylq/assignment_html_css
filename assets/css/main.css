@@ -14,7 +14,15 @@ html {
   background-image: url(../../assets/img/mountains.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  position: relative; }
+  position: relative;
+  background-size: auto; }
+  .header__bg-cloud {
+    width: 100%;
+    background-image: url(../../assets/img/bg-clouds.png);
+    position: absolute;
+    bottom: -200px;
+    height: 500px;
+    background-size: auto; }
 
 .nav {
   display: flex;
@@ -73,6 +81,7 @@ html {
         letter-spacing: 1.2px;
         color: #eee; }
   .header__content .prod-image {
+    z-index: 1;
     position: absolute;
     top: 40px;
     right: 0; }
@@ -95,14 +104,17 @@ html {
   cursor: pointer; }
 
 .container {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative;
+  z-index: 2; }
   .container .container-title {
     font-size: 54px;
     color: #043c9c;
     max-width: 840px;
     text-align: center;
     margin: auto;
-    font-weight: bold; }
+    font-weight: bold;
+    display: block; }
   .container .container-products {
     margin-top: 100px; }
 
@@ -192,6 +204,7 @@ html {
 .container-video {
   background-image: url(../../assets/img/video.png);
   width: 100%;
+  background-size: auto;
   background-repeat: no-repeat;
   height: 682px;
   object-fit: contain;
@@ -277,7 +290,7 @@ html {
 .footer {
   background-color: #4762fc;
   background-image: url(../../assets/img/Bg.png);
-  background-size: 100%;
+  background-size: auto;
   padding: 70px 0; }
 
 .footer-wrap {
@@ -510,7 +523,5 @@ html {
     width: 400px; } }
 
 @media (min-width: 1024px) {
-  .header {
-    background-size: 100%; }
-  .container-video {
-    background-size: 100%; } }
+  .scolldown-btn {
+    display: block; } }

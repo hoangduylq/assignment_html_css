@@ -134,7 +134,5 @@
     width: 400px; } }
 
 @media (min-width: 1024px) {
-  .header {
-    background-size: 100%; }
-  .container-video {
-    background-size: 100%; } }
+  .scolldown-btn {
+    display: block; } }

@@ -19,10 +19,20 @@ html {
 .header {
   height: 900px;
   background-color: $primary-color;
-  background-image: /*linear-gradient(rgba(71, 98, 252, 0.1), #fff),*/ url(../../assets/img/mountains.png);
+  background-image: url(../../assets/img/mountains.png);
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
+  background-size: auto;
+
+  &__bg-cloud {
+    width: 100%;
+    background-image: url(../../assets/img/bg-clouds.png);
+    position: absolute;
+    bottom: -200px;
+    height: 500px;
+    background-size: auto;
+  }
 }
 .nav {
   display: flex;
@@ -103,6 +113,7 @@ html {
   }
 
   .prod-image {
+    z-index: 1;
     position: absolute;
     top: 40px;
     right: 0;
@@ -133,6 +144,8 @@ html {
 // Container
 .container {
   margin-top: 30px;
+  position: relative;
+  z-index: 2;
 
   .container-title {
     font-size: 54px;
@@ -141,6 +154,7 @@ html {
     text-align: center;
     margin: auto;
     font-weight: bold;
+    display: block;
   }
 
   .container-products {
@@ -279,6 +293,7 @@ html {
 .container-video {
   background-image: url(../../assets/img/video.png);
   width: 100%;
+  background-size: auto;
   background-repeat: no-repeat;
   height: 682px;
   object-fit: contain;
@@ -396,7 +411,7 @@ html {
 .footer {
   background-color: $primary-color;
   background-image: url(../../assets/img/Bg.png);
-  background-size: 100%;
+  background-size: auto;
   padding: 70px 0;
 }
 
