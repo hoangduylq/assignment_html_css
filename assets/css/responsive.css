@@ -130,7 +130,9 @@
     .footer__socials__list {
       justify-content: flex-start; }
       .footer__socials__list li {
-        margin-right: 10px; } }
+        margin-right: 10px; }
+  .product__img__item {
+    display: none; } }
 
 @media (min-width: 1024px) {
   .scolldown-btn {
