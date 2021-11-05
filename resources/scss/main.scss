@@ -398,8 +398,11 @@ html {
   }
 }
 
-.container-founder {
+.container-founder-wrap {
   background-color: #f3faff;
+}
+
+.container-founder {
   display: flex;
   flex-direction: column;
   justify-content: center;

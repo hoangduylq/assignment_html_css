@@ -283,8 +283,10 @@ html {
     .container-customers__list div {
       min-width: 200px; }
 
+.container-founder-wrap {
+  background-color: #f3faff; }
+
 .container-founder {
-  background-color: #f3faff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -525,7 +527,7 @@ html {
   .container-customers__list {
     flex-direction: column; }
     .container-customers__list img {
-      margin-bottom: 20px; }
+      margin-bottom: 40px; }
   .footer__subscribe__mail button {
     top: 2px; } }
 
